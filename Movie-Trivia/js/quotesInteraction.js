@@ -10,8 +10,6 @@ var currentMovieIndex =  0;
   
   var game1 = new QuizGame(shuffle(movies));
  
-  
- 
    $( ".controlsContainer" ).append( $(
      `<div class="centered-container">
         <audio id="audio">

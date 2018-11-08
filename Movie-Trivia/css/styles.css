@@ -319,7 +319,7 @@ max-width: 80vw;
   margin-top: -13px;
   border-radius: 50%;
   position: absolute;
-  top: 150px;
+  top: 160px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -378,10 +378,6 @@ max-width: 80vw;
   left: 0%;
   z-index: 1;
 }
-
-
-
-
 
 }
 
