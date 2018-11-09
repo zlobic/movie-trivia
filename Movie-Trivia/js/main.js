@@ -25,7 +25,7 @@ var forrestGump = new NewMovie("Forrest Gump", "Tom Hanks", "Robert Zemeckis", "
 var hobbit = new NewMovie("De Hobbit", "Smaug", "Peter Jackson", "./audio/death.mp3");
 var goodFellas = new NewMovie("Goodfellas", "Robert De Niro", "Martin Scorsese", "./audio/gangster.mp3");
 var goodMorningVietnam = new NewMovie("Good Morning Vietnam", "Robin Williams", "Barry Levinson", "./audio/good_morning.mp3");
-var silenceOfTheLambs = new NewMovie("The Silence of the Lambs", "Anthony Hopkins", "Jonathan Demme", "../audio/liver.mp3");
+var silenceOfTheLambs = new NewMovie("The Silence of the Lambs", "Anthony Hopkins", "Jonathan Demme", "./audio/liver.mp3");
 var network = new NewMovie("Network", "Peter Finch", "Sidney Lumet", "./audio/mad_as_hell.mp3");
 var godfather = new NewMovie("The Godfather", "Marlon Brando", "Francis Ford Coppola", "./audio/offer.mp3");
 var matrix = new NewMovie("The Matrix", "Keanu Reeves", "Lana Wachowski", "./audio/I_Know_Kung_Fu!.mp3");
@@ -36,7 +36,7 @@ var taken = new NewMovie("Taken", "Liam Neeson", "Pierre Morel", "./audio/taken.
 var gladiator = new NewMovie("Gladiator","Russell Crowe","Ridley Scott","./audio/gladiator.mp3")
 
 
-var movies = [scarFace, theShining, batMan, pulpFiction,lorTheTwoTowers, aceVentura, inception, forrestGump, hobbit, goodFellas, goodMorningVietnam, silenceOfTheLambs, network, godfather, matrix, darkNightRises, lionKing, shutterIsland, taken];
+var movies = [scarFace, theShining, batMan, pulpFiction,lorTheTwoTowers, aceVentura, inception, forrestGump, hobbit, goodFellas, goodMorningVietnam, silenceOfTheLambs, network, godfather, matrix, darkNightRises, lionKing, shutterIsland, taken, gladiator];
 
 QuizGame.prototype.checkTitle = function (correctAnswer) {
     if ($('.titleInput').val().toLowerCase() === correctAnswer.toLowerCase()) {
@@ -66,14 +66,16 @@ QuizGame.prototype.checkDirector = function(correctAnswer) {
 QuizGame.prototype.move = function(input, scoreMax) {
     var elem = document.getElementById(input); 
     var width = 0;
+    var widthBar = 0;
     var id = setInterval(frame, 0);
     function frame() {
          if (width >= scoreMax) {
              clearInterval(id);
          } 
          else {
+            widthBar += 4;
             width++; 
-            elem.style.width = width + '%'; 
+            elem.style.width = widthBar + '%'; 
             elem.innerHTML = width * 1 + '%';
          }
     }

@@ -102,10 +102,12 @@ var currentMovieIndex =  0;
   $("#submit").click(function (){
     $(".equalizer").hide()
     clearInterval(barsRef)
-    if (currentMovieIndex === 19 ){
+    console.log(currentMovieIndex);
+    if (currentMovieIndex === movies.length - 1){
       audio.pause();
       checkEverything();
       increaseBars();
+      increaseQuote();
       $( "#scoreBoard" ).append( $(
         `<h1 id="scoreTitle">SCORES</h1>
         <div class="scoreContainer">  
@@ -128,7 +130,6 @@ var currentMovieIndex =  0;
       $(".labelAverageScore,.averageScore").hide().fadeIn(8000);
       game1.scoreAverage = Math.floor(((game1.scoreActors + game1.scoreDirectors + game1.scoreTitles) / 300) * 100);
       averageMili();
-      increaseQuote();
       currentMovieIndex++;
     } 
     else  {
