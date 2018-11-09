@@ -14,8 +14,8 @@ html {
   background-image: url("https://thumbs.gfycat.com/PoshGentleHoneybadger-size_restricted.gif");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  background-size: 85% auto;
+  background-position: auto;
+  background-size: 100%;
 }
 
 
@@ -31,9 +31,9 @@ canvas {
   border: 3px solid rgba(0, 0, 0, 0.7);
   background-color: rgba(117, 117, 117, 1);
   height: 60%;
-  -webkit-box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 10px 14px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 14px -8px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 14px -8px rgba(0,0,0,0.75);
   position: absolute;
   z-index: 1;
   top: 20%;
@@ -82,6 +82,13 @@ canvas {
 .controlsContainer > .far{
   margin: 0 10px;
   cursor: pointer;
+}
+
+#quoteCounter{
+  position: absolute;
+  top: 2%;
+  right: 5%; 
+  font-size: 1.5em;
 }
 
 #submit{
@@ -208,7 +215,7 @@ input:valid ~ .bar:after {
 
 input:invalid ~ .bar:before,
 input:invalid ~ .bar:after {
-  background: black;
+  background: #7C0D10;
 }
 
 * {
@@ -377,7 +384,9 @@ max-width: 80vw;
   top: 104%;
   left: 0%;
   z-index: 1;
+
 }
+
 
 }
 

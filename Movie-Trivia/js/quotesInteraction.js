@@ -93,6 +93,11 @@ var currentMovieIndex =  0;
       }, 35)
     }, 5500);
   }
+  
+  function increaseQuote (){
+    $("#quoteCounter").text((currentMovieIndex + 1).toString() + "/20");
+  }
+
 
   $("#submit").click(function (){
     $(".equalizer").hide()
@@ -123,6 +128,8 @@ var currentMovieIndex =  0;
       $(".labelAverageScore,.averageScore").hide().fadeIn(8000);
       game1.scoreAverage = Math.floor(((game1.scoreActors + game1.scoreDirectors + game1.scoreTitles) / 300) * 100);
       averageMili();
+      increaseQuote();
+      currentMovieIndex++;
     } 
     else  {
        checkEverything();
@@ -134,6 +141,7 @@ var currentMovieIndex =  0;
        }
        $("input[type=text]").val("");
        increaseBars();
+       increaseQuote();
     }
   })
 }); 
