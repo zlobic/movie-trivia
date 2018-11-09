@@ -12,7 +12,7 @@
             .typeString('Are you ready for movie trivia?')
             .pauseFor(1500)
             .deleteAll(30)
-            .typeString("let's test your movie knowledge")
+            .typeString("Let's test your movie knowledge")
             .pauseFor(1500)
             .deleteAll(30)
             .start();
