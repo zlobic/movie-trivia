@@ -102,7 +102,7 @@ var currentMovieIndex =  0;
   $("#submit").click(function (){
     $(".equalizer").hide()
     clearInterval(barsRef)
-    if (currentMovieIndex === 4 ){
+    if (currentMovieIndex === 19 ){
       audio.pause();
       checkEverything();
       increaseBars();

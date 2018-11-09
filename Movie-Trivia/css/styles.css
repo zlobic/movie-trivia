@@ -13,9 +13,9 @@ html {
   background-color: black;
   background-image: url("https://thumbs.gfycat.com/PoshGentleHoneybadger-size_restricted.gif");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: auto;
-  background-size: 100%;
+  background-size: contain;
+  background-position: top center;
+  background-size: auto 95% ;
 }
 
 
@@ -29,7 +29,7 @@ canvas {
 .showContainer {
   border-radius: 10px;
   border: 3px solid rgba(0, 0, 0, 0.7);
-  background-color: rgba(117, 117, 117, 1);
+  background-color: #908e8e;
   height: 60%;
   -webkit-box-shadow: 0px 10px 14px -8px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 10px 14px -8px rgba(0,0,0,0.75);
@@ -233,7 +233,7 @@ input:invalid ~ .bar:after {
 
 .myBar {
   margin: 10px 0 15px 0;
-  width: 0%;
+  width: 0;
   height: 30px;
   background-color: #86171A;
   border: 3px solid black;
