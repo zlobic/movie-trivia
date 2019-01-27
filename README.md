@@ -2,8 +2,6 @@
 
 #####  20 Movie Quotes for you to guess, and more! :cinema:
 
----
-
 ![Imgur](https://i.imgur.com/mjzlL0B.png)
 
 ## How to play
@@ -13,7 +11,7 @@
 - Press "Next" :arrow_right:
 
 ## Technologies
----
+
 - Javascript
 - JQuery
 - HTML
